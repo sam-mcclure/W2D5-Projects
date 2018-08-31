@@ -101,6 +101,7 @@ class ResizingIntSet
     @store.length
   end
 
+    #Is this n^2 or n?
   def resize!
     new_store = Array.new(num_buckets*2) { Array.new }
     @store.each do |bucket|
